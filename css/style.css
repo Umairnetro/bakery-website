@@ -1,0 +1,256 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: var(--secondary-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--fourth-color);
+}
+
+/* Fonts */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+/* CSS Varaibles */
+:root {
+    --primary-color: rgb(11, 49, 81);
+    --secondary-color: white;
+    --third-color: orange;
+    --fourth-color: rgb(39, 39, 39);
+}
+
+/* Navigation Bar */
+#navbar {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+#navbar::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    position: absolute;
+    z-index: -1;
+}
+
+
+/* Navigation Bar: image and logo */
+#logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0px 35px;
+}
+
+/* Navigation Bar: styling list */
+#navbar ul {
+    display: flex;
+    margin: 0px 450px 0px 0px; 
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar li a {
+    display: block;
+    padding: 14px 27px;
+    text-decoration: none;
+    font-size: .95rem;
+}
+
+#navbar li a:hover {
+    color: var(--third-color);
+    background-color: rgb(6, 33, 54);
+}
+
+/* Home Section */
+#home {
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+#home::before {
+    content: "";
+    background-image: url('../images/miti-qYreP9QOdrk-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 20%;
+    filter: brightness(50%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#home h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#home p {
+    font-size: .94rem;
+    padding: 0px 200px;
+}
+
+/* Services Section */
+#services{
+    display:flex;
+    /* flex-direction:column; */
+    /* flex-direction:row; */
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid skyblue; */
+}
+
+#services .box{
+    /* height is messing around */
+    /* height: 360px; */
+    
+    /* border: 2px solid green; */
+    background-color:var(--primary-color);
+    border-radius: 18px;
+    padding: 16px 18px 32px 18px;
+    margin: 0px 40px;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 11%);
+}
+
+#services .box img{
+    height: 140px;
+    /* filter:invert(100%); */
+    display: block;
+    margin: 10px auto;
+    padding: 12px 0px;
+}
+
+#services .box p{
+    font-size: .86rem;
+    padding: 0px 15px;
+}
+
+/* Client Section */
+#client-section{
+
+    /* height is messing around */
+    /* height:300px; */
+
+    background-color: var(--primary-color);
+    width: 92.6vw;
+    display: block;
+    /* margin: -12px auto; */
+
+    margin: 100px auto;
+
+    border-radius: 14px;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 11%);
+
+    /* border:3px solid purple; */
+
+}
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#client .client-items{
+    padding: 20px;
+    margin: 14px;
+}
+
+#client img{
+    height: 100px;
+    /* filter: invert(100%); */
+}
+
+
+/* Contact Section */
+#contact{
+    margin: 0px 0px 0px 0px;
+    background-color: var(--primary-color);
+    /* border:2px solid orange; */
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:2px solid red; */
+    padding: 0px 0px;
+}
+
+#contact-box form{
+    width:35%;
+}
+
+#contact-box .form-group{
+    margin: 12px 0px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 3px 4px;
+    margin:1px 0px;
+    color:var(--fourth-color);
+    border-radius: 3px;
+    border: 1px solid var(--fourth-color);
+}
+
+/* Utility Classes */
+.h-mainheading{
+    font-size:2.6rem;
+    padding: 0px 0px 12px 0px;
+}
+
+.h-primary{
+    font-size: 1.9rem;
+    font-weight: 700;
+    padding: 20px;
+
+}
+
+.h-secondary{
+    font-size: 1.4rem;
+    padding: 7px 0px;
+    font-weight: 600;
+    color: var(--third-color);
+}
+
+.btn{
+    font-size: .84rem;
+    display: block;
+    width: 108px;
+    margin: 18px auto;
+    padding: 7px 0px;
+    background-color: transparent;
+    border:2px solid var(--secondary-color);
+    border-radius: 40px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.center{
+    text-align: center;
+}
